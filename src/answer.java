@@ -10,4 +10,16 @@ public class answer {
         this.optionId = optionId;
         this.tof = tof;
     }
+
+    public int getQuestionId() {
+        return questionId;
+    }
+
+    public int getOptionId() {
+        return optionId;
+    }
+
+    public boolean getTof() {
+        return tof;
+    }
 }

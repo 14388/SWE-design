@@ -3,12 +3,12 @@ import java.util.List;
 
 public class question {
     private int id;
-    private static String title;
+    private  String title;
     private float point;
-    private static List<option> options;
+    private List<option> options;
     private String type; //0:TF, 1:multi-choice, 2:multi-responds
 
-    public static List<option> getOptions() {
+    public List<option> getOptions() {
         return options;
     }
 
@@ -40,7 +40,7 @@ public class question {
         private int id;
         private String title;
         private float point;
-        List<option> options = new ArrayList<>();
+        private List<option> options = new ArrayList<>();
         private String type;
 
         public questionBuilder(int id, String title, String type, float point) {
