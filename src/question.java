@@ -41,7 +41,7 @@ public class question {
         private String title;
         private float point;
         List<option> options = new ArrayList<>();
-        private String type; //0:TF, 1:multi-choice, 2:multi-responds
+        private String type;
 
         public questionBuilder(int id, String title, String type, float point) {
             this.id = id;

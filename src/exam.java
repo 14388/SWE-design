@@ -3,6 +3,7 @@ import java.util.List;
 
 public class exam {
     private List<question> questions;
+    private List<answerSet> answerSets = new ArrayList<>();
 
     private exam(examBuilder builder) {
         this.questions = builder.questions;
@@ -14,6 +15,10 @@ public class exam {
             for (option option : question.getOptions())
                 System.out.println(option.getOptionId() + " " + option.getContent() + " " + option.getTof());
         }
+    }
+
+    public void addAnwserSet(answerSet answerSet) {
+        this.answerSets.add(answerSet);
     }
 /////////////////////////////////////////////////////////////////////////////
     public static class examBuilder {
